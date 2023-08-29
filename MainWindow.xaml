@@ -1,0 +1,49 @@
+﻿<Window x:Class="Layout_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Layout_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+   
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+
+        </Grid.ColumnDefinitions>
+        <GridSplitter Grid.Column="1" ShowsPreview="False" Width="20"
+        HorizontalAlignment="Center" VerticalAlignment="Stretch" />
+        <Button Grid.Column="0" Grid.Row="1" Content="Строка 1 Столбец 0"  />
+        <Button Grid.Column="2" Grid.Row="1" Content="Строка 1 Столбец 2"  />
+        <Button Grid.Column="1" Grid.Row="0" Content="Строка 0 Столбец 1"  />
+        <Button Grid.Column="1" Grid.Row="1" Content="Строка 1 Столбец 1"  />
+        <Button Grid.Column="2" Grid.Row="0" Content="Строка 0 Столбец 2"  />
+        <StackPanel>
+            <Button Background="White" Content="Stack" />
+            <Button Background="Blue" Content="Pa..." />
+            <Button Background="Red" Content="...nel" />
+        </StackPanel>
+        <DockPanel LastChildFill="False">
+           
+            <Button DockPanel.Dock="Bottom" Background="BlanchedAlmond" Content="Dock Panel" />
+        </DockPanel>
+        <WrapPanel Orientation="Vertical">
+            <Button Background="AliceBlue" Content="Кнопка 1" />
+            <Button Background="Blue" Content="Кнопка 2" />
+            <Button Background="Aquamarine" Content="Кнопка 3" Height="30"/>
+            <Button Background="DarkGreen" Content="Кнопка 4" Height="20"/>
+            <Button Background="LightGreen" Content="Кнопка 5"/>
+            <Button Background="RosyBrown" Content="Кнопка 6" Width="80" />
+            <Button Background="GhostWhite" Content="Кнопка 7" />
+        </WrapPanel>
+    </Grid>
+    
+</Window>
